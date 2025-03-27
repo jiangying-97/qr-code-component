@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- stylesheet 👍 -->
+  <style>
+	body {
+		font-family: Arial;
+		font-size: 15px;
+		background-color: hsl(212, 45%, 89%);
+	}
+	.card-container {
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+	}
+	.rounded-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 600px;          
+		height: 800px; 
+		border: 2px;
+		border-radius: 10px;
+		padding: 10px;
+		box-shadow: 2px 2px 2px hsl(216, 15%, 48%);
+		background-color: hsl(0, 0%, 100%);
+	}
+	.image-qr {
+		width: 576px;
+		height: 576px;
+		background-image: url("./images/image-qr-code.png");
+		background-position: center;
+	}
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: OutFi;
+	}
+  </style>
+</head>
+<body>  
+	<div class = "card-container">
+		<div class = "rounded-box">
+			<div class = "image-qr"></div>
+			<div class = "text">
+				<h3>通过实际项目练习提高你的前端代码能力</h3>
+				<p>请扫描上方二维码访问前端学习路径获取更多消息</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
